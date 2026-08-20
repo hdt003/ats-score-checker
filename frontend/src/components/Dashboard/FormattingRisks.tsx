@@ -54,8 +54,11 @@ export const FormattingRisks: React.FC<FormattingRisksProps> = ({
         </div>
 
         <div className="flex items-center gap-2 text-xs">
+          <span className="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 font-bold">
+            Readability: {parsingScore}%
+          </span>
           <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20 font-bold">
-            Safety Score: {formattingScore}/100
+            Format Safety: {formattingScore}/100
           </span>
         </div>
       </div>
